@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservación - Dulces Aventuras</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #fffafc;
+      color: #333;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+    h1 {
+      color: #e86bbf;
+      text-align: center;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background: #e86bbf;
+      color: white;
+      border: none;
+      padding: 12px;
+      margin-top: 20px;
+      width: 100%;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #d054a2;
+    }
+    .whatsapp-button {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .whatsapp-button a {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .whatsapp-button a:hover {
+      background-color: #1ebe5d;
+    }
+  </style>
+</head>
+<body>
+  <h1>Reservación - Dulces Aventuras</h1>
+  <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Correo Electrónico:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Número de Teléfono:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="date">Fecha del Evento:</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="location">Ubicación del Evento (Ciudad/Dirección):</label>
+    <input type="text" id="location" name="location" required>
+
+    <label for="services">Selecciona el Servicio:</label>
+    <select id="services" name="services" required>
+      <option value="Solo Brincolín">Solo Brincolín</option>
+      <option value="Brincolín + Mesas/Sillas">Brincolín + Mesas y Sillas</option>
+      <option value="Paquete Completo">Paquete de Fiesta Completo</option>
+    </select>
+
+    <label for="notes">Notas Adicionales:</label>
+    <textarea id="notes" name="notes" rows="4"></textarea>
+
+    <button type="submit">Enviar Solicitud de Reservación</button>
+  </form>
+
+  <div class="whatsapp-button">
+    <a href="https://wa.me/17203174088?text=%C2%A1Hola!%20Quiero%20reservar%20una%20fiesta%20con%20Dulces%20Aventuras" target="_blank">
+      📲 Reservar al Instante por WhatsApp
+    </a>
+  </div>
+</body>
+</html>
